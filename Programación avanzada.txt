@@ -1,0 +1,320 @@
+Los comentarios que no son partes del código se pueden poner como //
+pero si hay una continuación de párrafo se puede utilizar /* */ para que no lo detecte como código.
+
+
+var x = 5;
+var y = 17;
+var nombre = "Awita";
+
+console.log ("Helowis");
+console.log(x * nombre);
+
+
+
+hacer una suma:
+
+function miFuncion (x, y) {
+  return x + y;
+}
+
+var x= 10;
+console.log(miFuncion(89,32));
+
+1. Para que sirven las booleans? Tiene relación con el true/false y por eso en var puedes poner cualquier nombre?
+
+== pregunta para comparación
+!=pregunta si son iguales
+
+
+var pepe = true;
+var josefa = false;
+
+//console.log(josefa== pepe);
+//console.log (josed != pepe);
+
+console.log(7 <= 9); 
+console.log(7 > 9);
+
+
+****Comparaciones:*****
+1. == Equal
+2. != Not equal
+3. < Less than
+4. <= Less or equal
+5. > Greater than
+6. >= Greater or equal
+7. ! Not
+
+
+
+var pepe = true;
+var josefa = false;
+
+if (pepe == true) {
+   console.log ("It's true!")
+}
+
+else {
+   console.log ("It's false!")
+}
+
+
+
+
+sumas;
+
+function mayorque10 (x)  {
+   if (x <10) {
+      console.log (x + "es menor que 10");
+   }
+else if (x > 10) {
+   console.log (x + "es mayor que 10");
+}
+ else {
+    console.log(x + "es justamente 10!")
+ }   }
+
+var pepe = 9;
+mayorque10 (pepe);
+
+-------------------------------------------------------------------------
+
+Para hacer una división:
+
+Devuelve el resiltado de la división
+console.log(160 / 4);
+
+Devuelve el resto de la división 
+console.log(160 % 4);
+
+
+Objetivo: Define una función que devuelva true si el argumento de 
+entrada es par y false si es impar.
+
+El console.log se utiliza para ejecutar una orden. Por ejemplo decir
+console.log(IMPAR(22)) para responder a una pregunta previamente y correctamente 
+hecha, para ver si podría ser impar o par. Responde con un false o true. 
+
+
+Para hacer pares e impares están las siguientes funciones:
+
+function PAR ( x ) {
+  if (x % 2 == 0 ) {return true}
+  else {return false}
+}
+
+function IMPAR ( y ) {
+  if (y % 2 != 0) {return true}
+   else {return false}
+}
+  
+
+Define una función que devuelva true si 'x' es divisible entre 'y' y false si no.
+
+
+Define una función que reciba 3 números, multiplique los 2 primeros, divida el resultado
+entre el tercero, y devuelve el resultado final.
+**El resultado del enunciado anterior es;
+function MULTI (a, b, c)
+{
+  return (a * b / c )
+}
+
+console.log(MULTI(20, 40, 12))
+
+****
+
+//Define una función que recibea dos cadenas de texto y las concatene, con un 
+espacio en medio, y devuelva el resultado:
+
+function ESPACIO (x, y, z) {
+  return x + y + z 
+}
+
+var x = "texto"
+var y = "textito"
+var z = "textoso"
+console.log(ESPACIO(x," ", y,z) )
+
+
+
+
+((que es potenciación??  5**5 ))
+
+
+3. Ejercicio:
+Define una función que divida dos números, si estos son divisibles, o que los multiplique
+si no lo son. Y que devuelva el resultado.
+
+
+Pizarra ejercicio:
+La semana que viene veremos los arrays, (vectores/matrices) y empezaremos
+con bucles while, for, y do-while.
+
+
+
+
+x = 7;
+y= 3; 
+
+// Operador AND -> && 
+// Operador OR -> ||
+
+function xEsMayorQueY(x, y) {
+  return	(x > y) && (y > 0) && (x>0);
+{
+
+show(xEsMayorQueY(x, y)); 
+
+function show(x) { 
+ console.log(x);
+}
+
+
+
+a = 25;
+b = 8;
+
+if (a % 2 == 0 && a > 10) {
+ show (a(;
+  }
+
+
+-----------------
+
+a = 25;
+b = 8;
+
+
+show (a % 2 == 0);
+show(a > 10); 
+
+if (a % 2 == 0 && a > 10) {
+ show(a);
+}
+else {
+  show("No se han cumplido las condiciones")
+}
+
+---------------
+
+
+var estoEsUnArray = ["hola", "mundo];
+*** Es un vector, una colección de datos. No hay true ni false. ***
+show(estoEsUnArray);
+show(estoEsUnArray.length);
+
+
+
+
+// Esto es un bucle
+//for (var i = 0; i < estoEsUnArray.length; i++) {
+     show("Iteración " + 1);
+//    show(estoEsUnArray[i]);
+// }
+
+el 0 se refiere al valor del que empieza, que puede empezar por cualquiera. 
+i significa índice
+
+i ++ --> i = 1 + 1
+i -- -> i = 1-1
+
+*************
+Ejercicios 
+
+// 1- Escribe un buble que se ejecute 1000 veces y muestre por consola el valor del índice
+en cada iteración
+
+for (var i = 0; i < 1000; i++) {
+  console.log(i);
+}
+
+para que los números estén juntos y no es una columna:
+
+var miString = "";
+console.log(miString);
+for (let i = 0; i < 1000; i++) {
+  miString = miString + "" + i;
+}
+
+console.log(miString)
+
+// 2- Escribe un bucle como el anterior pero que se ejecute en orden inverso.
+
+
+// 3- Escribe un bucle que muestre por pantalla únicamente los números entre 1 y 100 que sean
+múltiplos de 7
+
+
+for (var mult = 0; mult < 1000; mult ++) {
+  
+  if (mult % 7== 0)
+
+***************
+
+// Escribe un bucle que muestre por pantalla unicamente los números entre 1 y 100 
+que sean múltiplos de 7 o de 4
+
+
+
+/* Clases Array y Math */
+
+
+
+var pi = 	Math.PI;
+console.log(pi);
+console.log(Math.E);
+console.log(Math.sqrt(25));
+
+console.log(Math.random());
+
+w3schools.com
+
+
+
+todas las funciones tienen que llevar paréntesis,
+tengan o no algo 
+
+*****************************
+
+
+function randInt(min, max) {
+   return Math.floor(Math.random()  * (max - min + 1) ) + min;
+}
+
+var miNumDecimal = 0.7;
+console.log(Math.floor(miNumDecimal));
+console.log(Math.ceil(miNumDecimal));
+console.log(Math.round(miNumDecimal));
+
+console.log(randInt);
+
+//console.log(Math.random());
+
+
+var aleatoria = Math.random();
+//Bucle while
+
+var i = 0;
+while(aleatoria < 0.96) {
+  aleatoria = Math.random();
+  console.log(i + " - " + aleatoria);
+  i++;
+      
+      }
+
+//Escribe un bucle que vaya sumando valores aleatorios a una variable, hasta que la 
+variable valga mas de 100
+var borja = 0;
+
+//borja += x ---> borja = borja + x
+
+
+
+Descripción de valores.
+--for:
+--while:
+--var:
+
+
+
